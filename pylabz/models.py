@@ -8,7 +8,7 @@ from django.db import models
 
 
 
-class Contact(models.Model):
+class Contact(models.Model):  #Every class in the models.py is a table
     firstname = models.CharField(max_length=30, unique= False)
     # lastname= models.TextField()
     email = models.EmailField(default="")

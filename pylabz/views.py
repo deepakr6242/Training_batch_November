@@ -77,20 +77,15 @@ def contact(request):
 
 @csrf_exempt
 @api_view(['GET','POST'])
-
 def contact_list(request):
-    """
-    List all code snippets, or create a new snippet.
-    """
     if request.method == 'GET':
     	# print(request.query_params['id_'])
     	# contacts= Contact.objects.filter(id=id_).values()
 
     	# return JsonResponse({"models_to_return": list(contacts)})
-    	return JsonResponse('hello',safe=False)
+    	return Response({'name':'deepak'})
 
     elif request.method == 'POST':
-        
         return JsonResponse('hello post', status=400)
 
 # class CustomBrowsableAPIRenderer(BrowsableAPIRenderer):

@@ -14,3 +14,68 @@
 
 
  request---->ProjectUrl----->appurl-------->Views---->Models--->send reponse all the way back to browser
+
+ In order to run  your projet in new  port
+
+python manage.py runserver  port
+
+
+APIs
+Application programming  Interface
+Java------to get the data from customer ---- customer name what type of product and what is the quantity and   addrs
+        Login
+        Dashboard
+              Form
+                 elements asking for data
+              submit
+              	sends the data to db
+              analytics
+                 how manay cuistomers are there in Db
+                 from region
+               Affilate program
+                     affiliate urls
+
+http://xyz.com/analyticsapi?region='Bangalore'
+
+You can add the new member a,send,affl  to user list  of application who needs data from this application
+
+JAVA   ---- Use  functions --- develop API--
+
+url/path   http://xyz.com/analyticsapi
+ anyone from any lanaguage can acceess  your application
+
+You develop application in one lanaguage
+    You consume and supply in to ay language
+
+
+SOAP ----- Simple oBject access protocol ----- format----xml   Microsoft
+REST------Representational state transfer      xml json
+
+GET--- reytrive data from source
+PUT ----send data to create  a resource
+update--- update the data in source
+POST---- either to create or update
+Delete --- Delete a record
+patch -------  partial modification
+
+ POST UPDATE DELETE
+<name>deepak</name>					name:deepak
+<lang>python</lang> 				lang:python
+
+SOAP UI
+postman fiddler
+
+
+http://dummy.restapiexample.com/api/v1/employees
+
+DRF ---django rest framework --library
+
+Create---PUT poST
+Read---- GET
+Upate----- POST or patch
+Delete----delete
+
+EoDo
+
+
+
