@@ -1,0 +1,16 @@
+1.django-admin startproject myroot
+				You can rename  the folder myroot anytime later
+2.cd myroot
+3.python manage.py runserver------to make the django server or local dev server of your project up and running -------it Statloader which accepts the change automatically
+4.python manage.py startapp pylabz -----create the application inside the project
+5.python manage.py createsuperuser---- follow the  instructions
+6.use http://localhost:8000/admin------ check the user created in the step 5 is succesfull by logging into admin interface and You may add additional  user through interface  or  executing the step 5 again.
+7.python manage.py migrate---to migrate or apply the default changes to the default table..eg user,roles, authentication
+8.go to the settings.py inside the project folder mysite and find the variable INSTALLED_APPS and add the name of the app in the list  and save
+
+ any request   from browser will be taken by admin.url  http://127.0.0.1:8000/pylabz/
+ it finds if  any target applciation is there through the path of url
+ once it finds the matched applciation and it reroute  to it actual application url and the app url route  it to the defined fucntions
+
+
+ request---->ProjectUrl----->appurl-------->Views---->Models--->send reponse all the way back to browser

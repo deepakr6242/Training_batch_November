@@ -1,0 +1,12 @@
+from rest_framework import serializers 
+from mysite.models import Contact
+ 
+ 
+class ContactSerializer(serializers.ModelSerializer):
+ 
+    class Meta:
+        model = Tutorial
+        fields = ('id',
+                  'firstname',
+                  'email',
+                  )
